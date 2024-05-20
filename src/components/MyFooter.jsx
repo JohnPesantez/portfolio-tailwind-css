@@ -1,6 +1,6 @@
 import { Footer } from 'flowbite-react'
 import React from 'react'
-import logo from '../assets/icons/logo.png'
+import logo from '../assets/icons/logo-1.gif'
 import { BsEnvelope, BsGithub, BsLinkedin } from "react-icons/bs";
 
 const MyFooter = () => {
