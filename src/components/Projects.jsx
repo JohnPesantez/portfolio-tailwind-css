@@ -1,7 +1,7 @@
 import React from 'react';
-import prjct1 from  "/src/assets/DisruptX.png";
-import prjct2 from  "/src/assets/adabusiness.png";
-import prjct3 from  "/src/assets/Eduviz.png";
+import prjct1 from  "../assets/DisruptX.png";
+import prjct2 from  "../assets/adabusiness.png";
+import prjct3 from  "../assets/Eduviz.png";
 
 import { Link as ScrollLink } from 'react-scroll';
 
