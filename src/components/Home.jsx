@@ -19,14 +19,12 @@ const Home = () => {
             <img className='w-full max-w-lg' src={banner1} alt="" />
         </div>
         <div className='w-full md:w-3/5 mx-auto'>
-            <h2 className='dark:text-white text-4xl font-semibold mb-4 md:w-4/5'>Welcome to My Web Developer <span className='text-primary-light'>Portfolio</span></h2>
+            <h2 className='dark:text-white text-4xl font-semibold mb-4 md:w-4/5'>Full-Stack Software Developer <span className='text-primary-light'>Portfolio</span></h2>
             <p className='md:w-3/4 font-light text-sm text-neutralGrey mb-8'>
-            I am a passionate web developer dedicated to creating responsive and modern websites. With extensive experience in a variety of languages and libraries, including React JS, PHP, HTML5, and Tailwind CSS, I bring versatility and expertise to every project. My proficiency in WordPress further enables me to develop dynamic, user-friendly websites that meet contemporary standards.
-
-</p>
+           I'm a Full-Stack Software Developer based in London with over three years of commercial experience building and maintaining business platforms, web applications and mobile applications. My experience spans backend development with PHP and Laravel, databases such as SQL Server and PostgreSQL, and frontend and mobile development using JavaScript, TypeScript, React and React Native.
+            </p>
             <div className="flex flex-col sm:flex-row">
-                  <button onClick={handleFiverrClick} className='btn-primary mb-4 sm:mb-0 sm:mr-4'>Check my gig on Fiverr</button>
-                  <button className='btn-primary'>Contact me</button>
+                  <a className='btn-primary' href="#contact">Contact me</a>
             </div>
 
         </div>

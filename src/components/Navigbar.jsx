@@ -42,10 +42,10 @@ import { IoSunny } from "react-icons/io5";
       }
   });
   const DonwloadCV = () => {
-    const pdfUrl = "../files/John_Pesantez_CV 2.pdf";
+    const pdfUrl = "/portfolio-tailwind-css/files/John_Pesantez_Moreno_CV.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "JohnPesantez_CV.pdf"; // specify the filename
+    link.download = "JohnPesantez_Moreno_CV.pdf"; // specify the filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -92,7 +92,7 @@ import { IoSunny } from "react-icons/io5";
               <div className='space-x-12 hidden lg:flex items-center'>
                   <button 
                     onClick={DonwloadCV}
-                    className='hidden lg:flex items-center text-brandPrimary hover:text-gray-900'>Donwload CV <img src={cv_d} className="dark:hidden mx-2 mr-3 h-6 sm:h-9" alt="Download CV Logo" /><img src={cv_d_dark} className="hidden dark:block mx-2 mr-3 h-6 sm:h-9" alt="Download CV Logo" /></button>
+                    className='hidden lg:flex items-center text-brandPrimary hover:text-gray-900'>Download CV <img src={cv_d} className="dark:hidden mx-2 mr-3 h-6 sm:h-9" alt="Download CV Logo" /><img src={cv_d_dark} className="hidden dark:block mx-2 mr-3 h-6 sm:h-9" alt="Download CV Logo" /></button>
               </div>
 
               {/* menu btn for only mobile devices */}
@@ -107,12 +107,26 @@ import { IoSunny } from "react-icons/io5";
               </div>
           </div>
 
-          <div id='mobile_menu' className={`space-y-4 px-4 mt-16 py-7 bg-brandPrimary ${ isMenuOpen ? "block fixed top-0 right-0 left-0 " : "hidden"} `}>
-              {
-                  navItems.map(({link, path}) => <Link to={path} spy={true} smooth={true} offset={-100} key={path} className='block text-base text-white hover:text-brandPrimary first:font-medium' >{link}</Link> )
-              }
-
-          </div>
+          <div
+            id="mobile_menu"
+            className={`space-y-4 px-4 mt-16 py-7 bg-white dark:bg-brandPrimary ${
+                isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
+            }`}
+            >
+            {navItems.map(({ link, path }) => (
+                <Link
+                to={path}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                key={path}
+                onClick={() => setIsMenuOpen(false)}
+                className="block text-base text-gray-900 dark:text-white hover:text-brandPrimary dark:hover:text-white first:font-medium bg-neutral-light dark:bg-neutral-dark"
+                >
+                {link}
+                </Link>
+            ))}
+            </div>
       </nav>
   </header>
   )

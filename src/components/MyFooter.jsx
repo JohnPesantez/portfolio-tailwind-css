@@ -14,7 +14,7 @@ const MyFooter = () => {
                           <span>John Pesantez</span>
           </a>
           <div >
-            <p>Copyright © 2024 John Pesantez</p>
+            <p>Copyright © 2026 John Pesantez</p>
             <p>All rights reserved</p>
           </div>  
         </div>
@@ -27,18 +27,12 @@ const MyFooter = () => {
             </Footer.LinkGroup>
           </div>
           <div>
-            <Footer.Title title="Follow us" />
+            <Footer.Title title="Follow me" />
             <Footer.LinkGroup col>
               <Footer.Link href="#">Github</Footer.Link>
               <Footer.Link href="#">Discord</Footer.Link>
             </Footer.LinkGroup>
           </div>
-          
-            <Footer.Title title="Legal" />
-            <Footer.LinkGroup col>
-              <Footer.Link href="#">Privacy Policy</Footer.Link>
-              <Footer.Link href="#">Terms &amp; Conditions</Footer.Link>
-            </Footer.LinkGroup>
         </div>
       </div>
       <Footer.Divider />
@@ -46,7 +40,7 @@ const MyFooter = () => {
         <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
           <Footer.Icon href="https://www.linkedin.com/in/john-pesantez-a678b0235/" icon={BsLinkedin} />
           <Footer.Icon href="https://github.com/JohnPesantez" icon={BsGithub} />
-          <Footer.Icon href="mailto:info@johnpesantez.co.uk" icon={BsEnvelope} />
+          <Footer.Icon href="mailto:pesjohnmore@gmail.com" icon={BsEnvelope} />
         </div>
       </div>
     </div>

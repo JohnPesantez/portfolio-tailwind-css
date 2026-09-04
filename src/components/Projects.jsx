@@ -1,15 +1,15 @@
 import React from 'react';
-import prjct1 from  "../assets/DisruptX.png";
-import prjct2 from  "../assets/adabusiness.png";
-import prjct3 from  "../assets/Eduviz.png";
+import prjct1 from  "/src/assets/DisruptX.png";
+import prjct2 from  "/src/assets/adabusiness.png";
+import prjct3 from  "/src/assets/Eduviz.png";
 
 import { Link as ScrollLink } from 'react-scroll';
 
 const Projects = () => {
   const blogs = [
-    { id: 1, title: "Incubation and Acceleration Company Website", image: {prjct1}, URL: "https://www.disruptx.org" },
-    { id: 2, title: "Consulting Wordpress Website", image: {prjct2}, URL: "https://www.adabusiness.co.uk" },
-    { id: 3, title: "Visa and Education Wordpress Website", image: {prjct3}, URL: "https://www.eduviz.co.uk" },
+    { id: 1, title: "Incubation and Acceleration Company Website", image: prjct1, URL: "https://www.disruptx.org" },
+    { id: 2, title: "Consulting Wordpress Website", image: prjct2, URL: "https://www.adabusiness.co.uk" },
+    { id: 3, title: "Visa and Education Wordpress Website", image: prjct3, URL: "https://www.eduviz.co.uk" },
   ];
 
   return (
